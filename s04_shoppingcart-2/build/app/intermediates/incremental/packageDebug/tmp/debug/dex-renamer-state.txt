@@ -1,0 +1,4 @@
+#Sat Dec 28 11:55:02 AST 2019
+base.0=D\:\\code\\flutter_course_i1\\s04_shoppingcart\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
