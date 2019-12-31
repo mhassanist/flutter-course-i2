@@ -11,55 +11,23 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('DraggableScrollableSheet'),
         ),
-        body: ListView(
+        body: ListView.builder(
+            itemCount: 50,
+            itemBuilder: _buildlist
 
-          scrollDirection: Axis.horizontal,
-
-          children: <Widget>[
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.pink,
-            ),
-            Container(
-              height: 100,
-              width: 100,              color: Colors.cyan,
-            ),
-            Container(
-              child: Text("Hello"),
-              height: 100,
-              width: 100,              color: Colors.deepPurple,
-            ),
-            Container(
-              height: 100,
-              width: 100,              color: Colors.pink,
-            ),
-            Container(
-              height: 100,
-              width: 100,              color: Colors.cyan,
-            ),
-            Container(
-              child: Text("Hello"),
-              height: 100,
-              width: 100,              color: Colors.deepPurple,
-            ),
-            Container(
-              height: 100,
-              width: 100,              color: Colors.pink,
-            ),
-            Container(
-              height: 100,
-              width: 100,              color: Colors.cyan,
-            ),
-            Container(
-              child: Text("Hello"),
-              height: 100,
-              width: 100,              color: Colors.deepPurple,
-            ),
-          ],
         )
         ,
       ),
     );
+  }
+
+
+  Widget _buildlist(BuildContext context, int index) {
+    if (index == 0) {
+      return Text("Hello");
+    }
+    else {
+      return Container(height: 100,);
+    }
   }
 }

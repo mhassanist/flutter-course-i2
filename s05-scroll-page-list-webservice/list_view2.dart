@@ -22,12 +22,12 @@ class HomePage extends StatelessWidget {
   }
 
 
-  _buildlist(BuildContext context, int index) {
-      if (index == 0) {
-        return Text("");
-      }
-      else {
-        return Container();
-      }
+  Widget _buildlist(BuildContext context, int index) {
+    if (index == 0) {
+      return Text("Hello");
+    }
+    else {
+      return Container(height: 100,);
     }
   }
+}
