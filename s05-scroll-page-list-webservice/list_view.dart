@@ -12,8 +12,6 @@ class HomePage extends StatelessWidget {
           title: const Text('DraggableScrollableSheet'),
         ),
         body: ListView(
-          scrollDirection: Axis.vertical,
-
           children: <Widget>[
             Container(
               height: 100,

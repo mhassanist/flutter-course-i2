@@ -14,7 +14,6 @@ class HomePage extends StatelessWidget {
         body: ListView.builder(
             itemCount: 50,
             itemBuilder: _buildlist
-
         )
         ,
       ),
@@ -23,6 +22,7 @@ class HomePage extends StatelessWidget {
 
 
   Widget _buildlist(BuildContext context, int index) {
+   //return Item UI Widget here based on position
     if (index == 0) {
       return Text("Hello");
     }
